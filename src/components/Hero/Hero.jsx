@@ -21,7 +21,7 @@ const Hero = () => {
             {Categories?.map((link, index) => {
               return (
                 <li key={index} className="w-[139px] h-[46px] text-[14px]">
-                  <a href={link.path} className="flex items-center justify-center w-full h-full">{link.title}</a>
+                  <a href={link.path} className="flex items-center justify-center w-full h-full hover:text-[#DD783F]">{link.title}</a>
                 </li>
               );
             })}

@@ -16,7 +16,7 @@ const Menu = () => {
         <div className="container mx-auto grid grid-cols-2">
           {Card1?.map((link, index) => {
             return (
-              <div key={index} className="border w-[460px] h-[280px] bg-[url(./assets/card1.png)] bg-no-repeat bg-cover text-white flex flex-col justify-end p-5">
+              <div key={index} className="border w-[460px] h-[280px] bg-[url(./assets/card1.png)] bg-no-repeat bg-cover text-white flex flex-col justify-end p-5 transition-transform duration-200 hover:scale-105">
                 <div className="p-[20px]">
                   <h3 className="mb-[6px] text-[27px]">{link.title}</h3>
                   <p className="text-[14px] opacity-70">
@@ -31,7 +31,7 @@ const Menu = () => {
               </div>
             );
           })}
-          <div className="border w-[460px] h-[280px] bg-[url(./assets/card1.png)] bg-no-repeat bg-cover text-white flex flex-col justify-end p-5 relative">
+          <div className="border w-[460px] h-[280px] bg-[url(./assets/card1.png)] bg-no-repeat bg-cover text-white flex flex-col justify-end p-5 relative transition-transform duration-300 hover:scale-105">
             <mark className="absolute top-5 left-5 bg-[#DD783F] w-[87px] h-[26px] text-white uppercase rounded-[2px] flex items-center justify-center text-[12px] ">
               Adventure
             </mark>
@@ -58,7 +58,7 @@ const Menu = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col w-[296px] h-[291px]  bg-white"
+                className="flex flex-col w-[296px] h-[291px]  bg-white transition-transform duration-300 hover:scale-105" 
               >
                 <div>
                   <img className="w-full" src={link.image} alt="" />
