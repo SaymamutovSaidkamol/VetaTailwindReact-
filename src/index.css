@@ -32,3 +32,9 @@ body{
   border-bottom: 1px solid #dedede;
   width: 188px;
 }
+
+.title span:hover {
+  color: #DD783F;
+}
+
+
